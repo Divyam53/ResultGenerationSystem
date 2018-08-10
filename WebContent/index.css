@@ -1,0 +1,187 @@
+@CHARSET "UTF-8";
+
+html, body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+body{
+    color: #797979;
+	background: #f2f2f2;
+    font-family: 'Ruda', sans-serif;
+    padding: 0px !important;
+    margin: 0px !important;
+    font-size:13px;}
+header {
+	width: 100%;
+	position: absolute;
+	top: 0;
+	height: 8%;
+	z-index: 100;
+	 background-color: 	#20B2AA;
+	color: white;
+	text-align: center;
+	padding: 5px;
+}
+h1{
+	margin-top:0%;
+} 
+.main {
+	position:absolute;
+	min-height: 72%;
+	/*background-color:blue;*/
+	margin-top: 5%;
+	width: 100%; /* Sizing - any length */
+	padding: 60px 0 30px 0; /* Header height and footer height */
+	/*margin: 0 auto 0 auto;  Center content */
+}
+
+.content {
+	margin-left: 14%;
+	margin-right: 2%;
+	margin-top: -4%;
+	background-color:;
+	padding: 1px 16px;
+	height: 600px;
+	width: 55%;
+	color: red;
+}
+
+.strip {
+	position: absolute;
+	margin-top: 10px;
+	width: 84%;
+	background-color: #95a5a6;
+	padding: 2px 2px;
+	float: left;
+}
+
+table.profile {width =100%;
+	
+}
+
+.strip h2 {
+	font-size: .72em;
+	color: #300000;
+	text-align: center;
+}
+
+.options {
+	position: absolute;
+	margin-top: 60px;
+	height: 92%;
+	width: 84%;
+	background-color: #abb2b9;
+	padding: 2px 2px;
+	clear: left;
+}
+
+#first {
+	background-color: #DCDCDC;
+	height: 25%;
+}
+
+#buttons {
+	background-color: #B0E0E6;
+	height: 75%;
+}
+
+ul {
+	list-style-type: none;
+	margin-top: -4%;
+	margin-bottom: 1%;
+	padding: 0;
+	width: 15%;
+	background-color: #95a5a6;
+	position: fixed;
+	height: 85%;
+	overflow: auto;
+}
+
+li a {
+	display: block;
+	color: #000;
+	padding: 8px 0 8px 16px;
+	text-decoration: none;
+}
+
+li a.active {
+	background-color: #4CAF50;
+	color: white;
+}
+
+li a.active1 {
+	background-color: #4CAF50;
+	color: white;
+}
+
+li a.active2 {
+	background-color: #4CAF50;
+	color: white;
+}
+
+li
+ 
+a
+:hover
+:not
+ 
+(
+.active
+ 
+)
+{
+background-color
+:
+ 
+#555
+;
+
+	
+color
+:
+ 
+white
+;
+
+
+}
+footer {
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	height: 30px;
+	background-color: black;
+	color: white;
+	clear: both;
+	text-align: center;
+	padding: 5px;
+}
+
+#showimg {
+	background-color: grey;
+	color: white;
+	padding: 2px;
+	margin: 5px;
+	display: block;
+	font-family: "Verdana";
+	cursor: pointer;
+}
+
+#showimg:hover {
+	background-color: lightgrey;
+}
+
+#showing:active {
+	background-color: #1F1F1F;
+}
+
+.image-container {
+	border: 2px solid black;
+	text-align: center;
+}
+
+.image-container img {
+	border: 1px solid grey;
+	margin: 2px;
+}

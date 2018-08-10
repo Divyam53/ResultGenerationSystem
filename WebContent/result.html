@@ -1,0 +1,74 @@
+
+<html>
+<head>
+<title>IIIT Kota</title>
+<link rel="stylesheet" type="text/css" href="index.css" media="screen" />
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script>
+	$(document).ready(function() {
+		$("#hide").click(function() {
+			$(".sem").hide();
+		});
+		$("#show").click(function() {
+			$(".sem").show();
+		});
+
+	});
+	$("form").submit(function(event) {
+		if ($("input:first").val() === "correct") {
+			$("span").text("Validated...").show();
+			return;
+		}
+		$("span").text("Not valid!").show().fadeOut(1000);
+		event.preventDefault();
+	});
+</script>
+</head>
+<body>
+
+
+	<!-- Always on top: Position Fixed-->
+	<header>
+		<h1>INDIAN INSTITUTE OF INFORMATION TECHNLOGY,KOTA</h1>
+	</header>
+	<!-- Fixed size after header-->
+	<div class="main">
+		<ul>
+			<li><a class="active" href="#home">Home</a></li>
+			<li><a href="#news">News</a></li>
+			<li><a href="#contact">Contact</a></li>
+			<li><a href="#about">About</a></li>
+			<li><a class="active1" href="stlogin.html">Student Login</a></li>
+			<li><a class="active2" href="fclogin.html">Faculty Login</a></li>
+			<li><a class="active1" href="result.html">Result</a></li>
+		</ul>
+
+		<div class="content" align="center">
+			<!-- <form style="align:center">
+Enter Id: <input type="text" name="id"><br>
+<button id="show">Show</button>
+</form> -->
+			<form>
+				<div>
+					<input type="text"> <input type="submit">
+				</div>
+			</form>
+			<button id="hide">Hide</button>
+			<!-- <ul class="sem">
+<li><a id="l" type=button href="#">SEM1</a></li>
+<li><a id="l" type=button href="#">SEM2</a></li>
+<li><a  id="l" type=button href="#">SEM3</a></li>
+<li><a id="l" type=button href="#">SEM4</a></li>
+  </ul> -->
+		</div>
+	</div>
+	<!-- Always at the end of the page -->
+	<footer> Copyright© IIIT Kota </footer>
+</body>
+<script>
+	function div_show() {
+		document.getElementById('popup').style.display = "block";
+	}
+</script>
+</html>

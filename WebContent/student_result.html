@@ -1,0 +1,110 @@
+<html lang="en">
+<head>
+<title>IIIT KOTA</title>
+<link rel="stylesheet" type="text/css" href="ststyle.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="index.css" media="screen" />
+<link rel="stylesheet"
+	href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script
+	src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<style>
+p {
+	background: white;
+}
+
+button {
+	display: inline-block;
+	padding: 15px 25px;
+	font-size: 24px;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	outline: none;
+	color: #fff;
+	background-color: #1ABC9C;
+	border: none;
+	border-radius: 15px;
+}
+
+.button:hover {
+	background-color: #1ABC9C
+}
+
+table {
+	border-collapse: separate;
+	border-spacing: 10px;
+}
+
+tr {
+	height: 30px;
+	width: 70px;
+	border: hide;
+	text-align: center;
+	border: 1px;
+}
+
+.div1 {
+	margin-top: 30px;
+	text-align: center;
+	background-color: #F3F3F3;
+	height: 150px
+}
+
+.div2 {
+	text-align: center;
+}
+</style>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script>
+function send(str){
+	window.location.href="query1.jsp?str="+str;	
+}
+</script>
+</head>
+<body style="background-color: #16A085">
+	<div style="text-align: center;">
+		<h2 style="color:black;">welcome student</h2>
+	</div>
+	<div class="div2">
+		<div class="container">
+			<a type="button" class="btn btn-info" data-toggle="collapse"
+				data-target="#demo">Check Result</a>
+			<div id="demo" class="collapse">
+				<table style="margin-left: 220px">
+					<tr>
+						<td><button>SEM 1 marksheet</button></td>
+						<td><button>SEM 2 marksheet</button></td>
+						<td><button>SEM 3 marksheet</button></td>
+					</tr>
+					<tr>
+						<td><button>SEM 4 marksheet</button></td>
+						<td><button>SEM 5 marksheet</button></td>
+						<td><button>SEM 6 marksheet</button></td>
+					</tr>
+					<tr>
+						<td><button>SEM 7 marksheet</button></td>
+						<td><button>SEM 8 marksheet</button></td>
+						<td><button>CGPA</button>
+						<td>
+					</tr>
+				</table>
+			</div>
+		</div>
+
+	</div>
+	<script>
+	temp = document.getElementsByTagName('button').length;
+	for(i=0;i<temp;i++){
+		document.getElementsByTagName('button')[i].setAttribute('onclick','send(this.value)');
+		document.getElementsByTagName('button')[i].setAttribute('value',(i+1));
+	}
+	</script>
+</body>
+</html>
+<!--
+ box-shadow: 0 9px #999;  
+  text-align: center;
+    text-color: white;
+background-color: #1ABC9C ; -->
